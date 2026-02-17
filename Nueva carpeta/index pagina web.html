@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura Cliente/Servidor – Página Informativa</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: var(--bg);
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #1d4ed8);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 { margin: 0; font-size: 2.2rem; }
+    header p { margin-top: 10px; opacity: 0.9; }
+
+    nav {
+      background: var(--dark);
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      transition: 0.3s;
+    }
+
+    nav a:hover { opacity: 1; color: var(--primary); }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px 40px;
+    }
+
+    section {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+    }
+
+    h2 { margin-top: 0; color: var(--primary); }
+
+    ul li { margin-bottom: 6px; }
+
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 15px;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Página Informativa</h1>
+    <p>Arquitectura Cliente/Servidor, Diseño Centrado en el Usuario e Investigación del Entorno</p>
+  </header>
+
+  <nav>
+    <a href="#cliente-servidor">Cliente/Servidor</a>
+    <a href="#dcu">DCU</a>
+    <a href="#investigacion">Investigación</a>
+    <a href="#requisitos">Requisitos</a>
+    <a href="#publico">Público Objetivo</a>
+    <a href="#arbol">Árbol del Proyecto</a>
+  </nav>
+
+  <main>
+    <section id="cliente-servidor">
+      <h2>Arquitectura Cliente/Servidor en Desarrollo Web</h2>
+      <p>
+        La arquitectura Cliente/Servidor es un modelo fundamental en el desarrollo web moderno. Este enfoque establece una
+        separación clara entre el cliente, encargado de la interacción con el usuario, y el servidor, responsable del
+        procesamiento de datos, la lógica de negocio y la gestión de la información. Gracias a esta estructura, las
+        aplicaciones web pueden generar contenido dinámico, responder a múltiples solicitudes simultáneas y mantener un
+        adecuado nivel de seguridad.
+      </p>
+      <p>
+        En una aplicación web dinámica, el navegador actúa como cliente enviando solicitudes al servidor mediante protocolos
+        como HTTP. El servidor procesa dichas solicitudes, interactúa con bases de datos si es necesario, y devuelve una
+        respuesta que puede incluir información personalizada. Este mecanismo permite experiencias interactivas como
+        autenticación de usuarios, consultas en tiempo real y actualización de contenidos sin recargar completamente la página.
+      </p>
+      <p>
+        Este modelo aporta beneficios significativos en términos de seguridad, escalabilidad y mantenimiento. La información
+        sensible se conserva en el servidor, reduciendo riesgos de manipulación directa, mientras que la distribución de
+        funciones facilita la evolución del sistema.
+      </p>
+    </section>
+
+    <section id="dcu">
+      <h2>Diseño Centrado en el Usuario (DCU)</h2>
+      <p>
+        El diseño centrado en el usuario es un enfoque metodológico que prioriza las necesidades, expectativas y limitaciones
+        de los usuarios finales durante todo el proceso de desarrollo. En lugar de enfocarse exclusivamente en la tecnología,
+        el DCU busca garantizar que el sistema sea usable, accesible y eficiente. Este principio resulta especialmente relevante
+        en aplicaciones web, donde la experiencia del usuario impacta directamente en la aceptación del producto.
+      </p>
+      <p>
+        Aplicar DCU implica comprender cómo los usuarios interactúan con la interfaz, qué tareas desean realizar y qué
+        dificultades pueden enfrentar. Esto conduce a decisiones de diseño más acertadas relacionadas con navegación,
+        estructura visual, tiempos de respuesta y accesibilidad.
+      </p>
+    </section>
+
+    <section id="investigacion">
+      <h2>Importancia de la Investigación en el Entorno</h2>
+      <p>
+        La investigación en el entorno es esencial para el análisis de requisitos, ya que permite identificar condiciones
+        reales que afectan el uso del sistema. Factores como conectividad, perfil tecnológico de los usuarios, contexto
+        organizacional y características socioculturales influyen directamente en la definición de requisitos funcionales
+        y no funcionales.
+      </p>
+      <p>
+        Una comprensión adecuada del entorno reduce el riesgo de desarrollar soluciones que, aunque técnicamente correctas,
+        resulten poco prácticas o difíciles de implementar. Además, favorece la priorización de características relevantes
+        y la selección de tecnologías apropiadas.
+      </p>
+    </section>
+
+    <section id="requisitos">
+      <h2>Análisis de Requisitos y Especificaciones Técnicas</h2>
+      <ul>
+        <li><strong>Requisitos funcionales:</strong> Definen las acciones que el sistema debe realizar.</li>
+        <li><strong>Requisitos no funcionales:</strong> Establecen criterios de calidad como usabilidad, seguridad y rendimiento.</li>
+        <li><strong>Especificaciones técnicas:</strong> Describen tecnologías, arquitectura y restricciones del sistema.</li>
+      </ul>
+      <p>
+        Un análisis adecuado permite reducir errores, retrabajos y sobrecostos durante el desarrollo del software.
+      </p>
+    </section>
+
+    <section id="publico">
+      <h2>Público Objetivo y Propósito</h2>
+      <p>
+        Esta página está dirigida a estudiantes y personas interesadas en comprender conceptos fundamentales del desarrollo
+        web. Su propósito es explicar la relevancia de la arquitectura Cliente/Servidor, el diseño centrado en el usuario y
+        la investigación contextual dentro del proceso de ingeniería de software.
+      </p>
+    </section>
+
+    <section id="arbol">
+      <h2>Árbol de Directorios del Proyecto</h2>
+      <pre>
+proyecto-web/
+│── index.html
+│── css/
+│   └── estilos.css
+│── js/
+│   └── script.js
+      </pre>
+    </section>
+
+    <section>
+      <h2>Referencias</h2>
+      <p>
+        Pressman (2015); Sommerville (2016); Norman (2013); MDN (2024).
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desarrollo Web – Evidencia Académica</p>
+  </footer>
+</body>
+</html>
